@@ -35,6 +35,51 @@ The goal is to understand how an OS boots, manages memory and processes, and exp
 ---
 
 ## 🚀 Build & Run
-To build the kernel image:
+Build the kernel image:
 ```sh
 make
+```
+
+Run in RISC-V QEMU:
+```sh
+make run
+```
+
+Clean build artifacts:
+```sh
+make clean
+```
+
+---
+
+## 📂 Project Structure
+```
+os1000/
+├── src/        # RISC-V assembly and C source code
+├── build/      # Compiled binaries / OS image
+├── docs/       # Notes and diagrams
+├── Makefile    # Build script
+└── README.md   # Project overview
+```
+
+---
+
+## 🎯 Goals
+- Learn how a CPU boots and transitions into supervisor mode.  
+- Explore how exceptions, traps, and interrupts are handled.  
+- Implement paging and isolated virtual address spaces.  
+- Build a minimal shell and drivers to interact with hardware.  
+
+---
+
+## 📚 References
+- [Operating System in 1000 Lines](https://operating-system-in-1000-lines.vercel.app/en/02-assembly)  
+- [RISC-V Specifications](https://riscv.org/technical/specifications/)  
+- [QEMU RISC-V Documentation](https://www.qemu.org/docs/master/system/target-riscv.html)  
+- [OSDev Wiki](https://wiki.osdev.org)  
+
+---
+
+## ⚠️ Disclaimer
+This project is for **educational purposes** only.  
+It’s not secure, stable, or suitable for production use.
